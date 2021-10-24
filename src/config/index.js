@@ -15,7 +15,19 @@ export const GOALS_LIST = [
   "Goal 13: Climate Action",
   "Goal 14: Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
   "Goal 15: Life on Land",
-  "Goal 16: Peace, Justice and Strong Institutions",
+  "Goal 16: Peace, Justice and Strong Institutions"
 ];
 
 export const YEARS = [2020, 2019, 2018];
+
+export const UT = [
+  "Chandigarh",
+  "Delhi",
+  "Lakshadweep",
+  "Puducherry",
+  "Andaman and Nicobar Islands",
+  "Jammu and Kashmir",
+  "Ladakh",
+  "Dadra and Nagar Haveli",
+  "Daman and Diu"
+];
