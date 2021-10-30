@@ -57,7 +57,7 @@ function arrFilter(data, string, stateWise) {
       return UT.includes(x.area_name);
     });
   }
-  if(string.length) {
+  if (string && string.length && categoryWiseData.length) {
     let chDt = categoryWiseData.map(x => {
       return {
         area: x.area_name,
