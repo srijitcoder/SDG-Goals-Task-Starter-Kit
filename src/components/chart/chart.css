@@ -1,0 +1,8 @@
+.chart {
+    display: flex;
+    flex-direction: column;
+}
+
+.switch-bt {
+    float: right;
+}
