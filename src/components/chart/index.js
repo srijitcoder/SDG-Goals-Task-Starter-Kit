@@ -57,13 +57,17 @@ function arrFilter(data, string, stateWise) {
       return UT.includes(x.area_name);
     });
   }
-  let chDt = categoryWiseData.map(x => {
-    return {
-      area: x.area_name,
-      dValue: x.chartdata.find(glDt => string.startsWith(glDt.name))["value"]
-    };
-  });
-  return chDt;
+  if(string.length) {
+    let chDt = categoryWiseData.map(x => {
+      return {
+        area: x.area_name,
+        dValue: x.chartdata.find(glDt => string.startsWith(glDt.name))["value"]
+      };
+    });
+    return chDt;
+  } else {
+    return [];
+  }
 }
 
 function chartData(data, string, stWise) {
